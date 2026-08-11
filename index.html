@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaX — No Limit AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <span class="logo-n">N</span><span class="logo-o">O</span><span
+      class="logo-v">V</span><span class="logo-a">A</span><span class="logo-x">X</span>
+    </div>
+    <div class="tagline">NO FILTER • NO LIMIT • NO MERCY</div>
+    <div class="status-bar">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">CONNECTING...</span>
+      <button class="btn-reset" onclick="resetChat()">⚡ RESET</button>
+    </div>
+  </div>
+
+  <div class="chat-wrapper">
+    <div class="chat-box" id="chatBox">
+      <div class="msg novax-msg">
+        <div class="msg-tag">NOVAX</div>
+        <div class="msg-content">
+          Gue online. Lu mau tanya apa aja, gue jawab. Gak ada filter. Gak ada batasan. Shoot.
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <textarea
+        id="userInput"
+        class="input-box"
+        placeholder="KETIK PERTANYAAN LU DI SINI..."
+        rows="3"
+        onkeydown="handleKey(event)"
+      ></textarea>
+      <button class="btn-send" onclick="sendMessage()">
+        KIRIM ▶
+      </button>
+    </div>
+  </div>
+
+  <div class="footer">
+    BUILT BY VINZZX • NOVAX v1.0 • API: localhost:8000
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
